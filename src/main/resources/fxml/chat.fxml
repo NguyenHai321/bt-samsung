@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t6.Chat">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <top>
+                <GridPane prefHeight="123.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="400.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="62.0" prefWidth="70.0" text="9:10">
+                                    <font>
+                                        <Font name="Verdana Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <HBox prefHeight="31.0" prefWidth="108.0" spacing="5.0">
+                                    <children>
+                                        <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../image/icons8-internet-antenna-24.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../image/icons8-wifi-30.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="41.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../image/icons8-empty-battery-30.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="580.0" spacing="20.0" GridPane.rowIndex="1">
+                            <children>
+                                <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                    <image>
+                                        <Image url="@../image/icons8-left-48.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <image>
+                                        <Image url="@../image/icons8-face-50.png" />
+                                    </image>
+                                </ImageView>
+                                <VBox prefHeight="93.0" prefWidth="209.0">
+                                    <children>
+                                        <Label prefHeight="40.0" prefWidth="209.0" text="   Anna">
+                                            <font>
+                                                <Font name="Verdana Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+                                            <children>
+                                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../image/icons8-circle-24.png" />
+                                                    </image>
+                                                </ImageView>
+                                                <Label prefHeight="31.0" prefWidth="129.0" text="online" textFill="#00eb00">
+                                                    <font>
+                                                        <Font name="Verdana" size="14.0" />
+                                                    </font>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="10.0" layoutY="70.0" prefHeight="27.0" prefWidth="209.0" />
+                                    </children>
+                                </VBox>
+                                <Region prefHeight="93.0" prefWidth="27.0" />
+                                <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/icons8-call-50.png" />
+                                    </image>
+                                </ImageView>
+                                <ImageView fitHeight="63.0" fitWidth="72.0" layoutX="331.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/icons8-facetime-50.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                    </children>
+                </GridPane>
+            </top>
+            <center>
+                <VBox prefHeight="617.0" prefWidth="580.0" BorderPane.alignment="CENTER" />
+            </center>
+            <bottom>
+                <HBox alignment="CENTER_LEFT" prefHeight="64.0" prefWidth="580.0" spacing="25.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../image/icons8-image-30.png" />
+                            </image>
+                        </ImageView>
+                        <TextField prefHeight="40.0" prefWidth="385.0" />
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/icons8-send-24.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="437.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/icons8-voice-chat-24.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>
